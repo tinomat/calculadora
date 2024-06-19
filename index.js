@@ -7,10 +7,16 @@ const agregar = (valor) => {
 };
 
 // Vaciamos la pantalla
-const borrar = () => {
+const limpiar = () => {
   pantalla.value = ""; // Borramos los valores dandole un valor vacío
 };
 
+const borrar = () => {
+  // Tamos desde el primer caracter que sería 0 y a la cantidad total caracteres le restamos 1
+  const valorBorrado = pantalla.value.slice(0, pantalla.value.length - 1);
+  // Mostramos el valor en pantalla
+  pantalla.value = valorBorrado;
+};
 // Mostramos el resultado del calculo
 const calcular = () => {
   const valorPantalla = pantalla.value;
