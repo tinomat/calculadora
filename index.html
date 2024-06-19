@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="index.js"></script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <h1>Calculadora Curso JavaScript</h1>
+    <div class="calculadora">
+      <!-- El readonly significa solo lectura es decir el usuario no lo puede modificar -->
+      <input type="text" id="pantalla" readonly />
+      <input class="boton" type="button" value="C" onclick="borrar()" />
+      <input class="boton" type="button" value="" />
+      <input class="boton" type="button" value="" />
+      <input class="boton" type="button" value="/" onclick="agregar('/')" />
+      <input class="boton" type="button" value="7" onclick="agregar('7')" />
+      <input class="boton" type="button" value="8" onclick="agregar('8')" />
+      <input class="boton" type="button" value="9" onclick="agregar('9')" />
+      <input class="boton" type="button" value="*" onclick="agregar('*')" />
+      <input class="boton" type="button" value="4" onclick="agregar('4')" />
+      <input class="boton" type="button" value="5" onclick="agregar('5')" />
+      <input class="boton" type="button" value="6" onclick="agregar('6')" />
+      <input class="boton" type="button" value="-" onclick="agregar('-')" />
+      <input class="boton" type="button" value="1" onclick="agregar('3')" />
+      <input class="boton" type="button" value="2" onclick="agregar('2')" />
+      <input class="boton" type="button" value="3" onclick="agregar('1')" />
+      <input class="boton" type="button" value="+" onclick="agregar('+')" />
+      <input class="boton" type="button" value="" />
+      <input class="boton" type="button" value="0" onclick="agregar('0')" />
+      <input class="boton" type="button" value="." onclick="agregar('.')" />
+      <input class="boton" type="button" value="=" onclick="calcular('=')" />
+    </div>
+  </body>
+</html>
