@@ -11,7 +11,7 @@ h1 {
 }
 .calculadora {
   max-width: 255px;
-  margin: 0 auto;
+  margin: auto;
   background-color: #000000;
   padding: 2rem 20px;
   border-radius: 1rem;
